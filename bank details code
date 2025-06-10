@@ -1,0 +1,57 @@
+package program;
+
+public class Bankacc {
+
+    private String accholder;
+    private int balance;
+    
+    // Constructor
+    Bankacc(String accholder, int balance) {
+        this.accholder = accholder;
+        this.balance = balance;
+    }
+    
+    // Getter methods
+    public String getAccholder() {
+        return accholder;
+    }
+    
+    public int getBalance() {
+        return balance;
+    }
+    
+    // Deposit method
+    public void deposit(int dep) {
+        if (dep > 0) {
+            balance += dep;
+            System.out.println("Amount deposited: " + dep);
+            System.out.println("New account balance: " + balance);
+        } else {
+            System.out.println("Deposit amount must be greater than 0.");
+        }
+    }
+
+    // Setter method for account holder (if needed)
+    public void setAccholder(String accholder) {
+        this.accholder = accholder;
+    }
+
+    // Bankdetails class
+    public static class Bankdetails {
+        public static void main(String[] args) {
+            // Create a bank account object
+            Bankacc ac = new Bankacc("Gopal", 100);
+
+            // Display account details
+            System.out.println("Account holder name: " + ac.getAccholder()); 
+            System.out.println("Initial balance: " + ac.getBalance());
+
+            // Deposit money into the account
+            ac.deposit(3000);
+
+            // Update account holder name
+            ac.setAccholder("Ravi");
+            System.out.println("Updated account holder name: " + ac.getAccholder()); 
+        }
+    }
+}
