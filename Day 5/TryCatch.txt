@@ -12,12 +12,28 @@ public class Main {
     }
 }
 
-Example 2:
+Example 2:(Using integer)
 public class main {
     public static void main (String[] args){
     try{
         int[]friends ={23,05,2006};
         System.out.println(friends[2]);
+    }
+    catch(Exception e){
+        System.out.println("Error runing....");
+    }
+    finally{
+        System.out.println("Error has been cleared..!!!!");
+    }
+}
+}
+
+Example 3:(using String)
+public class main {
+    public static void main (String[] args){
+    try{
+        String[]friends ={"gopal","Aswin",lokesh"};
+        System.out.println(friends[1]);
     }
     catch(Exception e){
         System.out.println("Error runing....");
