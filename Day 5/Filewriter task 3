@@ -1,0 +1,19 @@
+package program;
+import java.io.FileWriter;
+import java.io.IOException;
+public class Filewriter {
+		public static void main (String[]args) {
+			try {
+				FileWriter myWriter =new FileWriter("D://Add-on web//notes.txt");
+				myWriter.write("hellooo my dear coder");
+				myWriter.close();
+				System.out.println("youre code written in file successfully...!!!");
+			}
+			catch (IOException e){
+				
+				System.out.println("an error occured:");
+				e.printStackTrace();
+			}
+
+	}
+}
