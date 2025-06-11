@@ -9,3 +9,19 @@ public class Main {
         }
     }
 }
+
+Example 2:
+public class main {
+    public static void main (String[] args){
+    try{
+        int[]friends ={23,05,2006};
+        System.out.println(friends[2]);
+    }
+    catch(Exception e){
+        System.out.println("Error runing....");
+    }
+    finally{
+        System.out.println("Error has been cleared..!!!!");
+    }
+}
+}
