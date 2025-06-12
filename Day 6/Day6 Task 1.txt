@@ -1,0 +1,18 @@
+package program;
+import java.util.ArrayList;
+public class Arraylistprogram {
+
+		public static void main(String[] args) {
+			ArrayList<Object> arr=new ArrayList<Object>();
+			arr.add("Gopiii");
+			arr.add("2nd Year");
+			arr.add("BCA");
+			arr.add("Computer Applications");
+			for(Object data:arr) {
+			System.out.println(data);
+			
+		}
+
+		}
+}
+
